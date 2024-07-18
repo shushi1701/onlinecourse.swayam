@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Certificate</title>
+    <link href="https://storage.googleapis.com/swayam2-node/assets/css/swayam_css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://storage.googleapis.com/swayam2-node/assets/css/swayam_css/main.css" rel="stylesheet">
+    <link href="https://storage.googleapis.com/swayam2-node/assets/css/swayam_css/home_page.css" rel="stylesheet">
+    <style>
+        .certificate-container {
+            padding-top: 105px;
+            padding-bottom: 50px;
+        }
+        /* Add responsive styles here */
+        @media screen and (max-width: 768px) {
+            .top-bar {
+                padding: 10px 0;
+            }
+            .navbar-brand img {
+                max-width: 100%;
+                height: auto;
+            }
+            .top-navigation {
+                text-align: center;
+                margin-top: 20px;
+            }
+        }
+        /* Style for iframe */
+        #myIframe {
+            width: 100%;
+            height: 627px;
+            background-color: #525659; /* Replace with your desired background color */
+            border: none; /* Remove iframe border if not needed */
+        }
+    </style>
+    <script>
+      // Replace the URL with your desired fake URL
+      window.history.replaceState({}, document.title, "https://onlinecourses.swayam2.ac.in/cec24_ge03/certificate?q=8tV1SxQ4ZgmDndZV64fyFUOGNC%2BDMO62d6VRLiDXBTVwZ5QCPQR1m4gtykXZYuVa");
+  </script>
+</head>
+<body>
+<header>
+    <div class="top-bar">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3 col-xs-12 top-left">
+                    <a class="navbar-brand" href="https://swayam.gov.in/">
+                        <img src="https://storage.googleapis.com/swayam2-node/assets/img/swayam_images/swayam_logo.png" alt="swayam-logo">
+                    </a>
+                </div>
+                <div class="col-sm-9 col-xs-12">
+                    <div class="top-navigation">
+                        <a href="https://swayam.gov.in/about">About Swayam</a> |
+                        <a href="#" onclick="event.preventDefault(); showAllCourses('');" style="cursor: pointer;">All Courses</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container certificate-container">
+    <iframe id="myIframe" src="swayam/pdf/Certifiacte-1.png" width="100%" height="627" frameborder="0" scrolling="no"></iframe>
+</div>
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6"> © 2024 SWAYAM. All rights reserved. </div>
+            <div class="col-sm-6">
+                <div class="pull-right"> Initiative by : Ministry of Education (Govt of India) </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('myIframe').onload = function() {
+        var iframe = document.getElementById('myIframe');
+        var iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+
+        var style = document.createElement('style');
+        style.textContent = `
+            img {
+                max-width: 74%;
+                height: auto;
+                display: block;
+                margin: auto;
+            }
+            body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                margin: 0;
+            }
+        `;
+
+        iframeDocument.head.appendChild(style);
+    };
+</script>
+</body>
+</html>
